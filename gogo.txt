@@ -1,0 +1,1208 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+An error occurred in an after(:all) hook.
+  ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: users: DELETE FROM "users"
+  occurred at /usr/local/lib/ruby/gems/1.9.1/gems/sqlite3-1.3.5/lib/sqlite3/database.rb:91:in `initialize'
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+Failures:
+
+  1) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:121:in `block (3 levels) in <top (required)>'
+
+  2) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:121:in `block (3 levels) in <top (required)>'
+
+  3) User pages following/followers followers 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  4) User pages following/followers followers 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  5) User pages following/followers followers 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  6) User pages following/followers followed users 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  7) User pages following/followers followed users 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  8) User pages following/followers followed users 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:207:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:209:in `block (3 levels) in <top (required)>'
+
+  9) User pages profile page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  10) User pages profile page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  11) User pages profile page follow/unfollow buttons unfollowing a user should decrement the other user's followers count
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  12) User pages profile page follow/unfollow buttons unfollowing a user should decrement the followed user count
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  13) User pages profile page follow/unfollow buttons unfollowing a user toggling the button 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  14) User pages profile page follow/unfollow buttons following a user should increment the other user's followers count
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  15) User pages profile page follow/unfollow buttons following a user should increment the followed user count
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  16) User pages profile page follow/unfollow buttons following a user toggling the button 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  17) User pages profile page microposts 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  18) User pages profile page microposts 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  19) User pages profile page microposts 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  20) User pages edit page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  21) User pages edit page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  22) User pages edit page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  23) User pages edit with invalid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  24) User pages edit with valid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  25) User pages edit with valid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  26) User pages edit with valid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  27) User pages edit with valid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  28) User pages edit with valid information 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:169:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:171:in `block (3 levels) in <top (required)>'
+
+  29) User pages signup with valid information should create a user
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  30) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  31) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  32) User pages signup with invalid information should not create a user
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  33) User pages signup with invalid information after submission 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  34) User pages signup with invalid information after submission 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./app/controllers/users_controller.rb:12:in `new'
+     # ./spec/requests/user_pages_spec.rb:129:in `block (3 levels) in <top (required)>'
+
+  35) User pages index 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  36) User pages index 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  37) User pages index delete links 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  38) User pages index delete links as an admin user 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  39) User pages index delete links as an admin user should be able to delete another user
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  40) User pages index delete links as an admin user 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  41) User pages index pagination 
+     Failure/Error: before(:all) { 30.times { FactoryGirl.create(:user) } }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:21:in `block (5 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:21:in `times'
+     # ./spec/requests/user_pages_spec.rb:21:in `block (4 levels) in <top (required)>'
+
+  42) User pages index pagination should list each user
+     Failure/Error: before(:all) { 30.times { FactoryGirl.create(:user) } }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/user_pages_spec.rb:21:in `block (5 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:21:in `times'
+     # ./spec/requests/user_pages_spec.rb:21:in `block (4 levels) in <top (required)>'
+
+  43) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  44) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  45) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  46) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  47) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  48) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  49) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  50) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  51) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  52) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  53) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  54) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  55) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  56) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  57) User when password is not present 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  58) User when email format is invalid should be invalid
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  59) User return value of authenticate method with invalid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  60) User return value of authenticate method with invalid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  61) User return value of authenticate method with valid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  62) User when password confirmation is nil 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  63) User when password doesn't match confirmation 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  64) User when email address is already taken 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  65) User when email format is valid should be valid
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  66) User when name is not present 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  67) User following 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  68) User following followed_users 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  69) User following followed user followers 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  70) User following and unfollowing 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  71) User following and unfollowing followed_users 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  72) User with a password that's too short 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  73) User email address with mixed case should be saved as all lower-case
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  74) User when name is too long 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  75) User micropost associations should destroy associated microposts
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  76) User micropost associations should have the right microposts in the right order
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  77) User micropost associations status feed 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  78) User micropost associations status feed 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  79) User micropost associations status feed 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  80) User remember token remember_token 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com",
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  81) Static pages Contact page 
+     Failure/Error: before { visit contact_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:57:in `block (3 levels) in <top (required)>'
+
+  82) Static pages Contact page 
+     Failure/Error: before { visit contact_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:57:in `block (3 levels) in <top (required)>'
+
+  83) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  84) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  85) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  86) Static pages Home page for signed-in users should render the user's feed
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  87) Static pages Home page for signed-in users follower/following counts 
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  88) Static pages Home page for signed-in users follower/following counts 
+     Failure/Error: before { visit root_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/static_pages_controller.rb:3:in `home'
+     # ./spec/requests/static_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  89) Static pages Help page 
+     Failure/Error: before { visit help_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  90) Static pages Help page 
+     Failure/Error: before { visit help_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  91) Static pages About page 
+     Failure/Error: before { visit about_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:50:in `block (3 levels) in <top (required)>'
+
+  92) Static pages About page 
+     Failure/Error: before { visit about_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/static_pages_spec.rb:50:in `block (3 levels) in <top (required)>'
+
+  93) Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:71:in `block (6 levels) in <top (required)>'
+
+  94) Authentication authorization for non-signed-in users in the Users controller visiting the followers page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:86:in `block (6 levels) in <top (required)>'
+
+  95) Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:66:in `block (6 levels) in <top (required)>'
+
+  96) Authentication authorization for non-signed-in users in the Users controller visiting the following page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:81:in `block (6 levels) in <top (required)>'
+
+  97) Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+     Failure/Error: before { visit users_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/controllers/users_controller.rb:66:in `signed_in_user'
+     # ./spec/requests/authentication_pages_spec.rb:76:in `block (6 levels) in <top (required)>'
+
+  98) Authentication authorization for non-signed-in users in the Relationships controller submitting to the destroy action 
+     Failure/Error: before { delete relationship_path(1) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/helpers/sessions_helper.rb:25:in `signed_in_user'
+     # ./spec/requests/authentication_pages_spec.rb:141:in `block (6 levels) in <top (required)>'
+
+  99) Authentication authorization for non-signed-in users in the Relationships controller submitting to the create action 
+     Failure/Error: before { post relationships_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/helpers/sessions_helper.rb:25:in `signed_in_user'
+     # ./spec/requests/authentication_pages_spec.rb:136:in `block (6 levels) in <top (required)>'
+
+  100) Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in should render the desired protected page
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:49:in `block (5 levels) in <top (required)>'
+
+  101) Authentication authorization for non-signed-in users in the Microposts controller submitting to the destroy action 
+     Failure/Error: before { delete micropost_path(FactoryGirl.create(:micropost)) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'microposts'
+     # ./spec/requests/authentication_pages_spec.rb:129:in `block (6 levels) in <top (required)>'
+
+  102) Authentication authorization for non-signed-in users in the Microposts controller submitting to the create action 
+     Failure/Error: before { post microposts_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/helpers/sessions_helper.rb:25:in `signed_in_user'
+     # ./spec/requests/authentication_pages_spec.rb:124:in `block (6 levels) in <top (required)>'
+
+  103) Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in should render the desired protected page
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:93:in `block (5 levels) in <top (required)>'
+
+  104) Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in when signing in again should render the default (profile) page
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:45:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:93:in `block (5 levels) in <top (required)>'
+
+  105) Authentication authorization as wrong user submitting a PUT request to the Users#update action 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:148:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:150:in `block (4 levels) in <top (required)>'
+
+  106) Authentication authorization as wrong user visiting Users#edit page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:148:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:150:in `block (4 levels) in <top (required)>'
+
+  107) Authentication authorization as non-admin user submitting a DELETE request to the Users#destroy action 
+     Failure/Error: let(:non_admin) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/authentication_pages_spec.rb:165:in `block (4 levels) in <top (required)>'
+     # ./spec/requests/authentication_pages_spec.rb:167:in `block (4 levels) in <top (required)>'
+
+  108) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  109) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  110) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  111) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  112) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  113) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  114) Authentication signin with valid information followed by signout 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  115) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  116) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  117) Authentication signin with invalid information after visiting another page 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       Could not find table 'users'
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___1305346131208715635_34420460'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__487513846837440851_34066280'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  118) Relationship 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:11:in `block (2 levels) in <top (required)>'
+
+  119) Relationship when follower id is not present 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:34:in `block (3 levels) in <top (required)>'
+
+  120) Relationship accessible attributes should not allow access to follower_id
+     Failure/Error: expect do
+       expected ActiveModel::MassAssignmentSecurity::Error, got #<ActiveRecord::StatementInvalid: Could not find table 'users'>
+     # ./spec/models/relationship_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  121) Relationship follower methods 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:23:in `block (3 levels) in <top (required)>'
+
+  122) Relationship follower methods 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  123) Relationship follower methods followed 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:25:in `block (3 levels) in <top (required)>'
+
+  124) Relationship follower methods follower 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+  125) Relationship when followed id is not present 
+     Failure/Error: let(:follower) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/relationship_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/models/relationship_spec.rb:29:in `block (3 levels) in <top (required)>'
+
+  126) Micropost pages micropost destruction as correct user should delete a micropost
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/micropost_pages_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/requests/micropost_pages_spec.rb:8:in `block (2 levels) in <top (required)>'
+
+  127) Micropost pages micropost creation with valid information should create a micropost
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/micropost_pages_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/requests/micropost_pages_spec.rb:8:in `block (2 levels) in <top (required)>'
+
+  128) Micropost pages micropost creation with invalid information should not create a micropost
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/micropost_pages_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/requests/micropost_pages_spec.rb:8:in `block (2 levels) in <top (required)>'
+
+  129) Micropost pages micropost creation with invalid information error messages 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/requests/micropost_pages_spec.rb:7:in `block (2 levels) in <top (required)>'
+     # ./spec/requests/micropost_pages_spec.rb:8:in `block (2 levels) in <top (required)>'
+
+  130) Micropost 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  131) Micropost 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  132) Micropost 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  133) Micropost 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  134) Micropost accessible attributes should not allow access to user_id
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  135) Micropost with content that is too long 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  136) Micropost user 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  137) Micropost with blank content 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  138) Micropost when user_id is not present 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/micropost_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/models/micropost_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+Finished in 0.84126 seconds
+138 examples, 138 failures
+
+Failed examples:
+
+rspec ./spec/requests/user_pages_spec.rb:124 # User pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:123 # User pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:228 # User pages following/followers followers 
+rspec ./spec/requests/user_pages_spec.rb:229 # User pages following/followers followers 
+rspec ./spec/requests/user_pages_spec.rb:230 # User pages following/followers followers 
+rspec ./spec/requests/user_pages_spec.rb:217 # User pages following/followers followed users 
+rspec ./spec/requests/user_pages_spec.rb:218 # User pages following/followers followed users 
+rspec ./spec/requests/user_pages_spec.rb:219 # User pages following/followers followed users 
+rspec ./spec/requests/user_pages_spec.rb:61 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:60 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:106 # User pages profile page follow/unfollow buttons unfollowing a user should decrement the other user's followers count
+rspec ./spec/requests/user_pages_spec.rb:100 # User pages profile page follow/unfollow buttons unfollowing a user should decrement the followed user count
+rspec ./spec/requests/user_pages_spec.rb:114 # User pages profile page follow/unfollow buttons unfollowing a user toggling the button 
+rspec ./spec/requests/user_pages_spec.rb:82 # User pages profile page follow/unfollow buttons following a user should increment the other user's followers count
+rspec ./spec/requests/user_pages_spec.rb:76 # User pages profile page follow/unfollow buttons following a user should increment the followed user count
+rspec ./spec/requests/user_pages_spec.rb:90 # User pages profile page follow/unfollow buttons following a user toggling the button 
+rspec ./spec/requests/user_pages_spec.rb:64 # User pages profile page microposts 
+rspec ./spec/requests/user_pages_spec.rb:65 # User pages profile page microposts 
+rspec ./spec/requests/user_pages_spec.rb:66 # User pages profile page microposts 
+rspec ./spec/requests/user_pages_spec.rb:176 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:177 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:178 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:184 # User pages edit with invalid information 
+rspec ./spec/requests/user_pages_spec.rb:199 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:202 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:198 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:201 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:200 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:154 # User pages signup with valid information should create a user
+rspec ./spec/requests/user_pages_spec.rb:163 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:162 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:134 # User pages signup with invalid information should not create a user
+rspec ./spec/requests/user_pages_spec.rb:142 # User pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:141 # User pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:17 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:16 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:35 # User pages index delete links 
+rspec ./spec/requests/user_pages_spec.rb:44 # User pages index delete links as an admin user 
+rspec ./spec/requests/user_pages_spec.rb:45 # User pages index delete links as an admin user should be able to delete another user
+rspec ./spec/requests/user_pages_spec.rb:48 # User pages index delete links as an admin user 
+rspec ./spec/requests/user_pages_spec.rb:24 # User pages index pagination 
+rspec ./spec/requests/user_pages_spec.rb:26 # User pages index pagination should list each user
+rspec ./spec/models/user_spec.rb:29 # User 
+rspec ./spec/models/user_spec.rb:25 # User 
+rspec ./spec/models/user_spec.rb:33 # User 
+rspec ./spec/models/user_spec.rb:31 # User 
+rspec ./spec/models/user_spec.rb:30 # User 
+rspec ./spec/models/user_spec.rb:27 # User 
+rspec ./spec/models/user_spec.rb:26 # User 
+rspec ./spec/models/user_spec.rb:23 # User 
+rspec ./spec/models/user_spec.rb:37 # User 
+rspec ./spec/models/user_spec.rb:32 # User 
+rspec ./spec/models/user_spec.rb:28 # User 
+rspec ./spec/models/user_spec.rb:24 # User 
+rspec ./spec/models/user_spec.rb:35 # User 
+rspec ./spec/models/user_spec.rb:34 # User 
+rspec ./spec/models/user_spec.rb:92 # User when password is not present 
+rspec ./spec/models/user_spec.rb:50 # User when email format is invalid should be invalid
+rspec ./spec/models/user_spec.rb:122 # User return value of authenticate method with invalid password 
+rspec ./spec/models/user_spec.rb:121 # User return value of authenticate method with invalid password 
+rspec ./spec/models/user_spec.rb:115 # User return value of authenticate method with valid password 
+rspec ./spec/models/user_spec.rb:102 # User when password confirmation is nil 
+rspec ./spec/models/user_spec.rb:97 # User when password doesn't match confirmation 
+rspec ./spec/models/user_spec.rb:77 # User when email address is already taken 
+rspec ./spec/models/user_spec.rb:61 # User when email format is valid should be valid
+rspec ./spec/models/user_spec.rb:41 # User when name is not present 
+rspec ./spec/models/user_spec.rb:172 # User following 
+rspec ./spec/models/user_spec.rb:173 # User following followed_users 
+rspec ./spec/models/user_spec.rb:177 # User following followed user followers 
+rspec ./spec/models/user_spec.rb:183 # User following and unfollowing 
+rspec ./spec/models/user_spec.rb:184 # User following and unfollowing followed_users 
+rspec ./spec/models/user_spec.rb:107 # User with a password that's too short 
+rspec ./spec/models/user_spec.rb:83 # User email address with mixed case should be saved as all lower-case
+rspec ./spec/models/user_spec.rb:46 # User when name is too long 
+rspec ./spec/models/user_spec.rb:145 # User micropost associations should destroy associated microposts
+rspec ./spec/models/user_spec.rb:141 # User micropost associations should have the right microposts in the right order
+rspec ./spec/models/user_spec.rb:159 # User micropost associations status feed 
+rspec ./spec/models/user_spec.rb:160 # User micropost associations status feed 
+rspec ./spec/models/user_spec.rb:161 # User micropost associations status feed 
+rspec ./spec/models/user_spec.rb:128 # User remember token remember_token 
+rspec ./spec/requests/static_pages_spec.rb:60 # Static pages Contact page 
+rspec ./spec/requests/static_pages_spec.rb:59 # Static pages Contact page 
+rspec ./spec/requests/static_pages_spec.rb:10 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:11 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:12 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:23 # Static pages Home page for signed-in users should render the user's feed
+rspec ./spec/requests/static_pages_spec.rb:37 # Static pages Home page for signed-in users follower/following counts 
+rspec ./spec/requests/static_pages_spec.rb:36 # Static pages Home page for signed-in users follower/following counts 
+rspec ./spec/requests/static_pages_spec.rb:46 # Static pages Help page 
+rspec ./spec/requests/static_pages_spec.rb:45 # Static pages Help page 
+rspec ./spec/requests/static_pages_spec.rb:53 # Static pages About page 
+rspec ./spec/requests/static_pages_spec.rb:52 # Static pages About page 
+rspec ./spec/requests/authentication_pages_spec.rb:72 # Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+rspec ./spec/requests/authentication_pages_spec.rb:87 # Authentication authorization for non-signed-in users in the Users controller visiting the followers page 
+rspec ./spec/requests/authentication_pages_spec.rb:67 # Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+rspec ./spec/requests/authentication_pages_spec.rb:82 # Authentication authorization for non-signed-in users in the Users controller visiting the following page 
+rspec ./spec/requests/authentication_pages_spec.rb:77 # Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+rspec ./spec/requests/authentication_pages_spec.rb:142 # Authentication authorization for non-signed-in users in the Relationships controller submitting to the destroy action 
+rspec ./spec/requests/authentication_pages_spec.rb:137 # Authentication authorization for non-signed-in users in the Relationships controller submitting to the create action 
+rspec ./spec/requests/authentication_pages_spec.rb:57 # Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in should render the desired protected page
+rspec ./spec/requests/authentication_pages_spec.rb:130 # Authentication authorization for non-signed-in users in the Microposts controller submitting to the destroy action 
+rspec ./spec/requests/authentication_pages_spec.rb:125 # Authentication authorization for non-signed-in users in the Microposts controller submitting to the create action 
+rspec ./spec/requests/authentication_pages_spec.rb:101 # Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in should render the desired protected page
+rspec ./spec/requests/authentication_pages_spec.rb:114 # Authentication authorization for non-signed-in users when attempting to visit a protected page after signing in when signing in again should render the default (profile) page
+rspec ./spec/requests/authentication_pages_spec.rb:159 # Authentication authorization as wrong user submitting a PUT request to the Users#update action 
+rspec ./spec/requests/authentication_pages_spec.rb:154 # Authentication authorization as wrong user visiting Users#edit page 
+rspec ./spec/requests/authentication_pages_spec.rb:171 # Authentication authorization as non-admin user submitting a DELETE request to the Users#destroy action 
+rspec ./spec/requests/authentication_pages_spec.rb:29 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:33 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:28 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:31 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:30 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:26 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:37 # Authentication signin with valid information followed by signout 
+rspec ./spec/requests/authentication_pages_spec.rb:14 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:13 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:18 # Authentication signin with invalid information after visiting another page 
+rspec ./spec/models/relationship_spec.rb:11 # Relationship 
+rspec ./spec/models/relationship_spec.rb:35 # Relationship when follower id is not present 
+rspec ./spec/models/relationship_spec.rb:14 # Relationship accessible attributes should not allow access to follower_id
+rspec ./spec/models/relationship_spec.rb:23 # Relationship follower methods 
+rspec ./spec/models/relationship_spec.rb:22 # Relationship follower methods 
+rspec ./spec/models/relationship_spec.rb:25 # Relationship follower methods followed 
+rspec ./spec/models/relationship_spec.rb:24 # Relationship follower methods follower 
+rspec ./spec/models/relationship_spec.rb:30 # Relationship when followed id is not present 
+rspec ./spec/requests/micropost_pages_spec.rb:40 # Micropost pages micropost destruction as correct user should delete a micropost
+rspec ./spec/requests/micropost_pages_spec.rb:28 # Micropost pages micropost creation with valid information should create a micropost
+rspec ./spec/requests/micropost_pages_spec.rb:15 # Micropost pages micropost creation with invalid information should not create a micropost
+rspec ./spec/requests/micropost_pages_spec.rb:21 # Micropost pages micropost creation with invalid information error messages 
+rspec ./spec/models/micropost_spec.rb:15 # Micropost 
+rspec ./spec/models/micropost_spec.rb:10 # Micropost 
+rspec ./spec/models/micropost_spec.rb:11 # Micropost 
+rspec ./spec/models/micropost_spec.rb:12 # Micropost 
+rspec ./spec/models/micropost_spec.rb:18 # Micropost accessible attributes should not allow access to user_id
+rspec ./spec/models/micropost_spec.rb:37 # Micropost with content that is too long 
+rspec ./spec/models/micropost_spec.rb:13 # Micropost user 
+rspec ./spec/models/micropost_spec.rb:32 # Micropost with blank content 
+rspec ./spec/models/micropost_spec.rb:27 # Micropost when user_id is not present 
+
+Randomized with seed 31993
+
